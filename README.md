@@ -11,5 +11,5 @@ Add/remove meal to favourites(localStorage)
 ![hh](https://ibb.co/VMhhgJm)
 ![favourites](https://pasteboard.co/4OdVzV9bYjGx.png)
 ![meal-recipe](https://pasteboard.co/cSVIxHHTqu10.png)
-![gif file](https://media.giphy.com/media/ssUTUt0wDK9GN6NjlQ/giphy.gif)
+
 
