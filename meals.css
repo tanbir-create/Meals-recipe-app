@@ -368,5 +368,10 @@ header p {
     width: 80px;
     /* margin-left: auto; */
   }
+  .favourite-btn{ 
+  font-size: 30px;
+  height: 28px;
+  width: 30px;
+}
 }
  
