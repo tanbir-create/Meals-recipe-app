@@ -9,8 +9,11 @@ const ingredients = document.getElementById('ingredients');
 
 
 
-//retrieve id from SS
-let mealId = sessionStorage.getItem('detail-id');
+//retrieve id from queryString
+let id = window.location.search.split('?')[1];
+
+//search for it in localStorage render the details
+let meal = JSON.parse(localStorage.getItem(id));
 
 //function to render the details using jsonata from fetch 
 function renderDetailsPage(meal) {
@@ -40,15 +43,16 @@ function renderDetailsPage(meal) {
     }
     
 }
+renderDetailsPage(meal);
 
-window.onload = () =>{ 
-    //fetch the meal details with the given ID
-    const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`;
-    fetch(url)
-    .then(response => response.json())
-    .then(jsonData => renderDetailsPage(jsonData.meals[0]))
-    .catch((error) =>{
-        throw(error)
-    });
+// window.onload = () =>{ 
+//     //fetch the meal details with the given ID
+//     const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`;
+//     fetch(url)
+//     .then(response => response.json())
+//     .then(jsonData => renderDetailsPage(jsonData.meals[0]))
+//     .catch((error) =>{
+//         throw(error)
+//     });
 
 }
