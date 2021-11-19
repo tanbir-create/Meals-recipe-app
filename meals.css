@@ -129,6 +129,7 @@ header p {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     
     
 }
