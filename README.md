@@ -6,8 +6,8 @@ Look up for its recipe in details,
 Add/remove meal to favourites(localStorage)
 
 
-![](https://pasteboard.co/TdPwzcXjnBh9.png)
-![](https://pasteboard.co/cOatJk9TAHiq.png)
-![](https://pasteboard.co/4OdVzV9bYjGx.png)
-![](https://pasteboard.co/cSVIxHHTqu10.png)
+![home](https://pasteboard.co/TdPwzcXjnBh9.png)
+![search-results](https://pasteboard.co/cOatJk9TAHiq.png)
+![favourites](https://pasteboard.co/4OdVzV9bYjGx.png)
+![meal-recipe](https://pasteboard.co/cSVIxHHTqu10.png)
 
