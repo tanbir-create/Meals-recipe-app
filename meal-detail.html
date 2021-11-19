@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meal-detail.css">
+    <script src="https://kit.fontawesome.com/51657c7de3.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <div id="name">
+                <h1 id="meal-name"></h1>
+                <p id="category">
+                    <img src = "./images/category.svg">
+                    <span id="cat"></span>
+                </p>
+                <p id="area-p">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span id="area"></span>
+                </p>
+            </div>
+           <div id="video-ins-flex"> 
+                <div id="iframe-container" style=" box-shadow: 0 0 10px 3px black;">
+                    <!-- width="500" height="300" -->
+                    <iframe id="ifream" 
+                        src=""   frameborder="0"autoplay;
+                       
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div id="instructions">
+                <h2>Instructions</h2>
+                    <p id="ins"></p>
+                    
+                </div>
+           </div>
+        </div>
+        <div id="right">
+            <img id="thumb" src="" alt="">
+            <h2 style="color: #0f0f11; margin-top: 20px;">Ingredients</h2>
+            <ul id="ingredients">
+                <!-- INGREDIENTS HERE-->
+            </ul>
+            
+
+        </div>
+    </div>
+
+    <script src="details.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #a2a8ba;
+    font-family: 'Poppins', sans-serif;
+    color: #c3c5ca;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* MAIN */
+#container{
+    font-family: sans-serif;
+    position: relative;
+    height: 95%;
+    background-image: linear-gradient(230deg, #565f74, #151c2d);
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem;
+    border-radius: 40px;
+    overflow-y: scroll;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+/* LEFT DIV */
+#left{
+    height: 90%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+
+#name{
+    margin-left: 50px;
+    margin-top: 30px;
+    margin: 30px 0 20px 52.5px;
+}
+#meal-name{
+    margin-left: 15px;
+}
+#category img, span{
+    text-align: center;
+    vertical-align: middle;
+  }
+  #area-p img, span{
+      
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  i{
+      color: #200e32;
+
+  }
+#name p{
+    display: inline-block;
+    margin-left: 15px;
+    color: #f9bc84;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+h1, h2{
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Lora', sans-serif;
+    letter-spacing: 1.5px;
+}
+h2{
+    margin-bottom: 20px;
+}
+#video-ins-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe{
+    width: 500px;
+    height: 300px;
+}
+#instructions{
+    
+    width: 85%;
+    margin: 3rem 0;
+    padding-bottom: 1rem;
+    word-break: break-word;
+    line-height: 1.5;
+    word-spacing: .15em;
+    
+}
+/* RIGHT DIV */
+#right{
+    /* margin: 1rem 0 1rem 1.8rem; */
+    height: 95%;
+    position: sticky;
+    color: #676a77;
+    top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px black;
+    border-radius: 40px;
+}
+
+#right img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    box-shadow: 0 0 10px 3px black;
+    border-radius: 10px;
+    min-height: 200px;
+    width: 50%;
+}
+
+#right{
+    width: 32%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: space-around;
+
+
+}
+/* ul{
+   margin: 0;
+    list-style-image: url('./images/ingredient.svg');
+} */
+
+/* INGREDIENTS */
+ul {
+    margin: 0;
+    list-style-type: none;
+    overflow-y: scroll;
+  
+  }
+  
+
+  ul li:before {
+  
+    content: '';
+  
+    display: inline-block;
+  
+    height: 16px;
+  
+    width: 17px;
+  
+     background-size: 17px;
+  
+    background-image: url("./images/ingredient.svg");
+  
+    background-repeat: no-repeat;
+  
+    margin-right: 5px;
+  
+  }
+ /* ul::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaa; 
+  }
+ul::-webkit-scrollbar-thumb {
+    background: #000;
+} */
+  
+li{
+    color: #676a77;
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.3;
+    word-spacing: .15em;
+}
+
+@media only screen and (max-width: 845px) {
+   #container{
+       flex-direction: column;
+       margin: 0;
+       height: 98%;
+   }
+   #left{
+       height: auto;
+       width: 100%;
+   }
+  #ins{
+      width: 98%;
+  }
+   #right{
+       width: 100%;
+       position: relative;
+       height: auto;
+      
+   }
+   
+  }
+
+  @media only screen and (max-width: 550px){
+    iframe{
+        width: auto;
+        height: auto;
+    }
+  }
+
+

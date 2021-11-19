@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Rubik:wght@500&display=swap');
+
+body{
+    background-image: url('./images/app-backgound.jpg');
+   /* background */
+   background-size: cover;
+   box-sizing: border-box;
+   
+   background-position: center;
+    
+   background-attachment: scroll;
+    /* background-repeat: no-repeat;   
+    back
+    opacity: .5;
+    height: 100%;
+    width: 100%; */
+
+  height: 100vh;
+  position: relative;
+  font-family: 'Rubik',sans-serif;
+  color: whitesmoke;
+}
+  
+#container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.2rem;
+}
+header{
+    margin-top: 28px;
+    height: 50px;
+    font-size: 3rem;
+    color: #DCDCDC;
+    font-weight: 700;
+    /* color: ; */
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+header img{
+    
+    height: 39px;
+    width: 40px;
+    margin-top: 9px;
+    
+}
+
+header p {
+    margin: 0;
+    
+}
+
+
+#show-fav-container{
+
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15%;
+
+}
+ #show-fav{
+  
+    transition: all .5s ease;
+    background-color:  rgba(24, 26, 26, .92);
+    color: #DCDCDC;
+    border: 3px solid white;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+    height: 50px;
+    
+}
+#show-fav:hover {
+    color:  rgba(24, 26, 26, .92);
+    background-color: #DCDCDC;
+    cursor: pointer;
+}
+ 
+  
+
+#input-text{
+    min-height: 50px;
+    width: 70%;
+    border: none ;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.2);
+    text-indent: 10px; 
+    border-radius: 18px 18px 18px 18px;
+    transition: .3s;
+    color: #495057;
+    font: 500 1.5rem 'Josefin Sans', sans-serif;
+    background-color: rgba(24, 26, 26, .92);
+    color: rgb(247, 226, 223);
+    padding: 0 20px 0 20px;
+    line-height: 1.6rem;
+    
+}
+::placeholder{
+  
+    font-size: 1.5rem;
+    
+}
+
+
+#input-text:focus{
+    font: 500 1.5rem 'Josefin Sans', sans-serif;
+    outline: none;
+    line-height: 1.6rem;
+
+}
+
+
+
+
+/* SEARCH RESULTS */
+
+#search-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    
+    
+}
+
+
+#test{
+    position: absolute;
+    top: 50
+}
+
+/* LOADER */
+/* from loading.io */
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+
+
+/* .search-list {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+  
+  .card {
+    margin: 20px 10px 0 10px;
+    width: 318px;
+    height: 318px;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+
+    color: darkgray;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   
+    
+  }
+  
+
+  .title-wrapper{
+    width: 318px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0 10px;
+    border-radius: 0 0 40px 40px;
+    background-color: #495057;
+
+      
+
+  }
+.card_title {
+    text-align: center;
+    /* border-radius: 40px 40px 40px 40px; */
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 5px 0 0 0;
+    height: auto;
+    transition: color .15s ease-in-out;
+
+  
+
+  }
+
+  .card_title:hover{
+    cursor: pointer;
+    color: #D0D0D0;
+    transform: scale(1.009)
+
+  }
+  
+  
+  
+  .card:hover {
+    transform: scale(1.0175, 1.0175);
+    opacity: .85;
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+    cursor: default ;
+  }
+  .category{
+      text-align: center;
+      margin: 7px 0 0 0;
+      /* padding: 3px 0 3px 0; */
+      font-weight: 500;
+      /* bottom: 10px; */
+      /* color: black; */
+      font-size: 1.2rem;
+      /* -webkit-text-fill-color: whitesmoke;  Will override color (regardless of order) 
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black; */
+  }
+  .favourite-btn{
+    background: transparent;
+    color: #666;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: whitesmoke;
+    transition: transform .3s ease-in-out;
+}
+
+
+  .favourite-btn:hover{
+    color: #e51d5f;
+    transform: scale(1.175);
+  }
+
+
+
+.category img, span{
+  vertical-align: middle;
+}
+
+
+
+ 
+ .favourite-btn{
+    margin: 0;
+    -webkit-text-stroke: .5px black;
+    color: white;
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+  }
+  /* .card_title, .category{
+    background: cornsilk;
+  } */
+
+
+
+  
+  .is-fav-color{
+    color: #e51d5f;
+    
+  }
+  
+  @media all and (max-width: 768px) {
+    body{
+      background-image: url('./images/background-mobile.jpg');
+    }
+    #container{
+      margin-top: 10px;
+    }
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+    header{
+      font-size: 1.5rem;
+      margin-top: 15px;
+      height: 25px;
+    }
+    header img{
+      height: inherit;
+      width: inherit;
+      margin: 0;
+    }
+    #show-fav-container{
+      margin-top: 15px;
+      
+
+    }
+    #show-fav{
+      height: 30px;
+      font-size: 1rem;
+      padding: 0;
+    }
+    #input-text{
+      min-height: 45px;
+      padding: 10px;
+    }
+    ::placeholder{
+  
+      font-size: 1.2rem;
+      
+  }
+  .lds-ring{
+    height: 80px;
+    width: 80px;
+    /* margin-left: auto; */
+  }
+}
+ 
