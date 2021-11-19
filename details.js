@@ -43,8 +43,9 @@ function renderDetailsPage(meal) {
     }
     
 }
-renderDetailsPage(meal);
-
+window.onload = () =>{
+    renderDetailsPage(meal);
+}
 // window.onload = () =>{ 
 //     //fetch the meal details with the given ID
 //     const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`;
