@@ -93,11 +93,13 @@ function renderResults(results,  isFavListCalled) {
         
         //add click listener to name tag of meal and load a new tab
         //with meal details onClick  
-        name.addEventListener('click', function loadDetails(){
-            //store meal ID in sessionStorage to fetch it and render in the new
+         name.addEventListener('click', function loadDetails(){
+            //store meal ID in localStorage to fetch it and render in the new
             //details page 
-            sessionStorage.setItem('detail-id', result.idMeal)
-            window.open('meal-detail.html');
+            
+            localStorage.setItem(result.idMeal, JSON.stringify(result))
+            //pass result id to new window in query string
+            window.open('meal-detail.html?' + result.idMeal);           
         });
 
         favouriteBtn.addEventListener('click',  function addToFavourites() {
