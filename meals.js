@@ -225,7 +225,7 @@ window.onload = () =>{
         //will setup a new request in 200ms/delay time
         searchTime = setTimeout(() => {
             search(searchField.value.trim());
-        }, 200);
+        }, 250);
     }
 }
 
