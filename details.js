@@ -15,6 +15,8 @@ let id = window.location.search.split('?')[1];
 //search for it in localStorage render the details
 let meal = JSON.parse(localStorage.getItem(id));
 
+document.title = meal.strMeal;
+
 //function to render the details using jsonata from fetch 
 function renderDetailsPage(meal) {
     const {strMeal, strCategory, strArea, strYoutube, strInstructions, strMealThumb} = meal;
