@@ -81,10 +81,7 @@ function renderResults(results,  isFavListCalled) {
         item.append(titleWrapper)
           
         
-        if(isInLocals(result.idMeal) == -1){
-            favouriteBtn.classList.remove('is-fav-color')
-
-        }else{
+        if(isInLocals(result.idMeal) !== -1){
             favouriteBtn.classList.add('is-fav-color')
 
         }
