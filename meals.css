@@ -345,15 +345,17 @@ header p {
       width: inherit;
       margin: 0;
     }
-    #show-fav-container{
+   #show-fav-container{
       margin-top: 15px;
-      
+      margin-right: 5.5%;
 
     }
+   
     #show-fav{
-      height: 30px;
+      height: 40px;
       font-size: 1rem;
-      padding: 0;
+      padding: 10px;     
+      
     }
      #input-text{
       min-height: 45px;
