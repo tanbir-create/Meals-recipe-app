@@ -355,10 +355,19 @@ header p {
       font-size: 1rem;
       padding: 0;
     }
-    #input-text{
+     #input-text{
       min-height: 45px;
       padding: 10px;
+      width: 90%;
+      line-height: 1;
+      font-size: 1.2rem;
     }
+    #input-text:focus{
+      font: 1.2rem 'Josefin Sans', sans-serif;
+      outline: none;
+      line-height: 1;
+  
+  }
     ::placeholder{
   
       font-size: 1.2rem;
