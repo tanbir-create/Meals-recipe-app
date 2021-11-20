@@ -37,7 +37,9 @@ body{
 
 #name{
     
-    margin: 30px 0 20px 52.5px;
+/*     margin: 30px 0 20px 52.5px; */
+     text-align: start;
+    margin: 30px 0 0px 6%;
 }
 #meal-name{
     margin-left: 15px;
