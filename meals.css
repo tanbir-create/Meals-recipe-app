@@ -260,7 +260,7 @@ header p {
   }
   .category{
       text-align: center;
-      margin: 7px 0 0 0;
+      margin: 7px 0 7px 0;
       /* padding: 3px 0 3px 0; */
       font-weight: 500;
       /* bottom: 10px; */
