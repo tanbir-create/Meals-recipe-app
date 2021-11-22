@@ -40,7 +40,7 @@ function renderDetailsPage(meal) {
         }
        const li =  document.createElement('li');
 
-        li.innerHTML = `${meal[measure]} ${meal[ingredient]}`
+        li.innerHTML = `<input type='checkbox'> ${meal[measure]} ${meal[ingredient]}`
         ingredients.appendChild(li)
     }
     
